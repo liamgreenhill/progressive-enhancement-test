@@ -143,7 +143,7 @@
     color: #0b0c0c
 }
 
-.govuk-list,.app-prose-scope ul,.app-prose-scope ol {
+.govuk-list,.app-prose-scope ul,.app-prose-scope ol, dl, .timeline-visualization {
     font-family: "GDS Transport",arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -9006,3 +9006,28 @@ li code,td code,p code {
 .app-prose-scope>:last-child {
     margin-bottom: 0
 }
+
+/* Progressive Enhancement to replace definition list with SVG timeline image  */
+
+dl {
+    padding-left: 2em;
+    margin-left: 1em;
+    border-left: 1px solid;
+}
+  
+dt:before {
+    content: '-';
+    position: absolute;
+    margin-left: -2.05em;
+}
+
+svg.timeline-visualization {
+  display: inline-block;
+
+}
+
+svg.timeline-visualization circle {
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+  }
