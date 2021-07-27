@@ -9031,3 +9031,35 @@ svg.timeline-visualization circle {
     stroke: black;
     stroke-width: 2;
   }
+
+table {
+    margin: 2em;
+}
+
+td, th {
+    border: 1px solid #dadada;
+    padding: 1em;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+    color: #fff;
+}
+
+.visible {
+    display: none;
+}
+
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+

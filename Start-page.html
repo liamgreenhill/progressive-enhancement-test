@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <!-- saved from url=(0076)https://design-system.service.gov.uk/patterns/start-pages/default/index.html -->
-<html lang="en" class="govuk-template  flexbox no-flexboxtweener"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" class="govuk-template  flexbox no-flexboxtweener">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
     <title>Start pages – Example – Nest Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c"> 
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://design-system.service.gov.uk/assets/images/favicon.ico" type="image/x-icon">
-      <link rel="mask-icon" href="#" color="#0b0c0c"> 
-      <link rel="apple-touch-icon" sizes="180x180" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-180x180.png">
-      <link rel="apple-touch-icon" sizes="167x167" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-167x167.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-152x152.png">
-      <link rel="apple-touch-icon" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon.png">
-    
 
-    
-  <meta name="robots" content="noindex, nofollow">
-  <link href="./stylesheets/main-1441a2e39348bdbe89589ce11f311c15.css" rel="stylesheet" media="all">
-  
-  <link href="./stylesheets/related-items-12ee0ecf8a34dd4bd59ff9d621576ae9.css" rel="stylesheet" media="all">
-  <!--[if lt IE 9]>
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://design-system.service.gov.uk/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="#" color="#0b0c0c"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon.png">
+
+    <meta name="robots" content="noindex, nofollow">
+    <link href="./stylesheets/main-1441a2e39348bdbe89589ce11f311c15.css" rel="stylesheet" media="all">
+
+    <link href="./stylesheets/related-items-12ee0ecf8a34dd4bd59ff9d621576ae9.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]>
     <script src="/javascripts/head-ie8-b99b69269f5de4f330c1834f40d45566.js"></script>
-  <![endif]-->
-  <script src="./javascripts/modernizr.js"></script>
+    <![endif]-->
+    <script src="./javascripts/modernizr.js"></script>
 
-    
-    
     <meta property="og:image" content="https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png">
   </head>
-  <body class="govuk-template__body  js-enabled">
+
+  <body class="govuk-template__body">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     
 
@@ -69,12 +68,9 @@
     </div>
     
     <div class="govuk-header__content">
-    
     <a href="#" class="govuk-header__link govuk-header__link--service-name">
       Progressive Enhancement — Proof of Concept
     </a>
-    
-    
     </div>
     
   </div>
@@ -101,6 +97,43 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-l">Assess your workers</h1>
 
+      <div id="chart_div"></div>
+
+    <table id="pension-age" class="">
+      <thead>
+          <tr>
+              <th colspan="2">Pension Savers Grouped By Age</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>20–29</td>
+              <td>1</td>
+          </tr>
+          <tr>
+              <td>30–39</td>
+              <td>2</td>
+          </tr>
+
+          <tr>
+              <td>40–49</td>
+              <td>3</td>
+          </tr>
+
+          <tr>
+              <td>50–59</td>
+              <td>5</td>
+          </tr>
+
+          <tr>
+              <td>60–69</td>
+              <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <script type="text/javascript">document.getElementById("pension-age").classList.add('visible');</script>    
+
       <p class="govuk-body">Use this service to:</p>
 
       <ul class="govuk-list govuk-list--bullet">
@@ -110,6 +143,8 @@
       </ul>
 
       <p class="govuk-body">Checking takes around 2 minutes and the timeline for this process looks something like this:</p>
+
+      <h2 class="govuk-heading-m">Timeline</h2>
 
       <dl class="timeline">
         <dt>1</dt><dd>Submit assessment</dd>
@@ -189,117 +224,11 @@
   <script src="./javascripts/govuk-frontend-3e3b8ee4a154ddfbd00af6151e323cc6.js"></script>
   <script src="./javascripts/example-9c3169e4fadb985206ba331be236abd9.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-
-  <script type="text/javascript">
-
-var SVG_NS = 'http://www.w3.org/2000/svg';
-
-function supportsSvg() {
-  return document.implementation &&
-    (
-      document.implementation.hasFeature('http://www.w3.org/TR/SVG11/feature#Shape', '1.0') ||
-      document.implementation.hasFeature('SVG', '1.0')
-    );
-}
-
-function getDataFromDefinitionList(definitionList) {
-  var children = definitionList.children;
-  
-  var yearIndex = {};
-  var data = [];
-  var currentYear = null;
-  
-  for (var childIndex = 0; childIndex < children.length; childIndex++) {
-    var child = children[childIndex];
-    
-    if (child.nodeName == 'DT') {
-      currentYear = child.textContent;
-    } else if (child.nodeName == 'DD' && currentYear !== null) {
-      if (!yearIndex[currentYear]) {
-        yearIndex[currentYear] = data.length;
-        data.push({
-          year: +currentYear,
-          values: []
-        });
-      }
-      
-      data[yearIndex[currentYear]].values.push(child.textContent);
-    }
-  }
-  return data;
-}
-
-function createSvgElement() {
-  var element = document.createElementNS(SVG_NS, 'svg');
-  element.setAttribute('width', '100%');
-  element.setAttribute('height', '250px');
-  
-  // Improvement... 
-  // you should set a viewBox so that when the page scales 
-  // the whole timeline is still viewable.
-  
-  element.classList.add('timeline-visualization');
-  
-  return element;
-}
-
-function drawTimeline(svgElement, data) {
-  var paper = Snap(svgElement);
-  
-  var canvasSize = parseFloat(getComputedStyle(paper.node)["width"]);
-  
-  var start = +data[0].year;
-  var end = +data[data.length - 1].year;
-  
-  // add some padding
-  start--;
-  end++; end++;
-  
-  var range = end - start;
-  
-  paper.line(0, 200, canvasSize, 200).attr({
-    'stroke': 'black',
-    'stroke-width': 2
-  });
-  
-  data.forEach(function(datum) {
-    var x = canvasSize * (datum.year - start) / range;
-    
-    paper.circle(x, 200, 6);
-    
-    paper.text(x, 230, datum.year).attr({
-      'text-anchor': 'middle'
-    });
-    
-    var averageIndex = (datum.values.length - 1) / 2;
-    var xOffsetSize = 24;
-    datum.values.forEach(function(value, index) {
-      var offset = (index - averageIndex) * xOffsetSize;
-      
-      paper.text(x + offset, 180, value)
-        .attr({
-          'text-anchor': 'start'
-        })
-        .transform('r -45 ' + (x + offset) + ' 180');
-    });
-  });
-}
-
-if (supportsSvg()) {
-  var timeline = document.querySelector('.timeline');
-  
-  timeline.style.display = 'none';
-  
-  var data = getDataFromDefinitionList(timeline);
-  
-  var svgElement = createSvgElement();
-  timeline.parentNode.insertBefore(svgElement, timeline);
-  
-  drawTimeline(svgElement, data);
-}
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="./javascripts/enhancements.js"></script>
 
 
-  </script>
+
   
 
 </body></html>
